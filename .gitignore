@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+target/
+**/target/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Solana specific
+.anchor/
+test-ledger/
+.yarn/
+
+# Hardhat files
+cache/
+artifacts/
+typechain/
+typechain-types/
+coverage/
+coverage.json
+ignition/deployments/ 
