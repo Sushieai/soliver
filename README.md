@@ -26,6 +26,8 @@ Built during the Solana Global Hackathon 2025.
 - **Relayer (Node.js)**:  
   Submits VAAs to Ethereum on behalf of the Solana program.
 
+  ![Arch-diagram](./public/soliver-diagram.png)
+
 
 ## 🔧 Features (MVP)
 
@@ -38,12 +40,14 @@ Built during the Solana Global Hackathon 2025.
 
 ## 📁 Repo Structure
 
-soliver/
-├── contracts/ # Ethereum - Solidity Vault
-├── programs/ # Solana - Anchor lending program
-├── relayer/ # VAA relay bot (TypeScript)
-├── shared/ # Constants, messageTypes, emitter data
-└── README.md
+<pre> 
+  soliver/
+  ├── contracts/ (Ethereum - Solidity Vault) 
+  ├── programs/ (Solana - Anchor lending program) 
+  ├── relayer/ (VAA relay bot - TypeScript) 
+  ├── shared/ (Constants, messageTypes, emitter data) 
+  └── README.md
+</pre>
 
 
 ## 🔒 Security Assumptions
@@ -53,13 +57,14 @@ soliver/
 - `receiveVAA()` verifies emitter address
 - Liquidation logic is decentralized via bots
 
+ ![tradeoffs](./public/tradeoffs.png)
 
 ## 🗺️ Future Plans
 
 - Full automation of relaying + liquidation routing
 - Permissionless liquidation rewards
-- Jito restaking for validator-based liquidation quorum
-- Additional collateral types: stETH, cbETH, wBTC
+- Jito (Re)staking for NodeOperators-based liquidation quorum
+- Additional collateral types: stETH, cbETH
 - UX improvements for 1-click onboarding
 
 
